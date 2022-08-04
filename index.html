@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>AXIOS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h3>Create product</h3>
+        <form class="border ">
+            <h3 class="bg-secondary p-2">Product info</h3>
+            <div class="form-row px-2">
+                <div class="form-group col-md-6">
+                    <label for="inputID">ID</label>
+                    <input type="text" class="form-control" id="inputID" placeholder="product id">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputImage">Image</label>
+                    <input type="text" class="form-control" id="inputImage" placeholder="product image link">
+                </div>
+            </div>
+            <div class="form-row px-2">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="product name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputProType">ProductType</label>
+                    <input type="text" class="form-control" id="inputProType" placeholder="mobile">
+                </div>
+            </div>
+            <div class="form-row px-2">
+                <div class="form-group col-md-6">
+                    <label for="inputPrice">Price</label>
+                    <input type="text" class="form-control" id="inputPrice" placeholder="product price">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputDesPrice">Price</label>
+                    <input type="text" class="form-control" id="inputDesPrice" placeholder="product description">
+                </div>
+            </div>
+            <div class="form bg-secondary p-2 ">
+                <button type="submit" class="btn btn-primary" id="createProduct">Create</button>
+                <button type="submit" class="btn btn-success" id="updateProduct">Update</button>
+            </div>
+            <div class="form-row mt-2">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputSearch" placeholder="Search by name" />
+                </div>
+                <div class="form-group col-md-6">
+                    <button class="btn btn-primary" type="submit" id="btnSearch">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="form">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-2">ID</th>
+                        <th class="col-2">image</th>
+                        <th class="col-2">name</th>
+                        <th class="col-2">price</th>
+                        <th class="col-2">description</th>
+                        <th class="col-2">type</th>
+                        <th class="col-2"></th>
+                    </tr>
+                </thead>
+                <tbody id="tableProduct">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+        integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- models -->
+    <script src="./models/Product.js"></script>
+
+    <script src="./controllers/index.js"></script>
+
+</body>
+
+</html>
